@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* gris claro Bootstrap */
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* Titulares principales */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #2c3e50; /* azul oscuro */
+}
+
+/* Parrafos */
+p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilo personalizado para tarjetas docentes */
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Imágenes de tarjetas docentes */
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #ffffff93;
+}
+
+/* Navbar activo */
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: #003366; /* azul marino oscuro */
+  color: #ffffff !important;
+  font-size: 0.9rem;
+  padding: 1.5rem 1rem;
+}
+
+/* Aumenta contraste para enlaces */
+a {
+  color: #0056b3;
+}
+
+a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+/* Ajustes responsivos (opcional extra) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+}
+
+/* Asegura que el body ocupe toda la pantalla y no se corte el footer */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer p {
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 1 !important;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}

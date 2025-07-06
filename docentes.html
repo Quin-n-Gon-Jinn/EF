@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docentes - Ciencias Sociales</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Tu estilo personalizado -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú principal">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Ciencias Sociales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="plan-de-estudios.html">Plan de estudios</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Docentes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main role="main" class="container mt-5">
+    <section class="text-center">
+      <h1 class="text-4xl font-bold text-center mb-4 text-gray-800 animate-fade-in-up">Nuestro Equipo Docente</h1>
+      <p class="lead">Profesionales altamente calificados con experiencia académica y práctica.</p>
+    </section>
+
+    <!-- Tarjetas de docentes -->
+    <section class="row mt-5" aria-label="Lista de docentes">
+      <!-- Docente 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/docente1.jpg" alt="Dra. María Fernández, antropóloga" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Dra. María Fernández</h5>
+            <p class="card-text">Doctora en Antropología con más de 10 años de experiencia en investigación social aplicada.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Docente 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/docente2.jpg" class="card-img-top" alt="Mg. Carlos Ramírez, sociólogo">
+          <div class="card-body">
+            <h5 class="card-title">Mg. Carlos Ramírez</h5>
+            <p class="card-text">Magíster en Sociología. Especializado en conflictos sociales y participación ciudadana.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Docente 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/docente3.jpg" class="card-img-top" alt="Lic. Ana Lucía Torres, historiadora">
+          <div class="card-body">
+            <h5 class="card-title">Lic. Ana Lucía Torres</h5>
+            <p class="card-text">Licenciada en Historia. Experta en historia latinoamericana contemporánea y procesos educativos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agrega más docentes si deseas -->
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-light text-center py-4 mt-5" role="contentinfo">
+    <p class="mb-0">&copy; 2025 Facultad de Ciencias Sociales - Universidad CcnC</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

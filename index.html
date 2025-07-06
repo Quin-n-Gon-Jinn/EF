@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facultad de Ciencias Sociales</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header role="banner">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menú principal">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ciencias Sociales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="plan-de-estudios.html">Plan de estudios</a></li>
+            <li class="nav-item"><a class="nav-link" href="docentes.html">Docentes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main role="main" class="container mt-5">
+    <section class="text-center">
+      <h1 class="text-4xl font-bold text-center mb-4 text-gray-800 animate-fade-in-up">Nuevo Programa Académico</h1>
+      <p class="lead">Conoce la propuesta educativa de la Facultad de Ciencias Sociales para formar profesionales del futuro.</p>
+    </section>
+
+    <!-- Carrusel -->
+    <section class="mt-5" aria-label="Presentación de imágenes destacadas">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="Estudiantes participando en clase interactiva">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" alt="Docente explicando en salón moderno">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Siguiente">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Tarjetas informativas -->
+    <section class="row mt-5" aria-label="Resumen del programa académico">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Formación Integral</h5>
+            <p class="card-text">Desarrollo de habilidades sociales, críticas y éticas para enfrentar los retos actuales.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Docentes Especializados</h5>
+            <p class="card-text">Profesionales con amplia experiencia académica y de campo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Proyección Social</h5>
+            <p class="card-text">Programas de voluntariado y prácticas comunitarias con impacto real.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="container mt-5 mb-5" aria-label="Formulario de contacto">
+      <h2 class="text-center mb-4">Contáctanos o solicita más información</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" required>
+          <div class="invalid-feedback">
+            Por favor, ingresa tu nombre.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" required>
+          <div class="invalid-feedback">
+            Ingresa un correo válido.
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          <div class="invalid-feedback">
+            Por favor, escribe un mensaje.
+          </div>
+        </div>
+
+        <div class="col-12 text-center">
+          <button class="btn btn-primary px-5" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-4" role="contentinfo">
+    <p class="mb-0">&copy; 2025 Facultad de Ciencias Sociales - Universidad CcnC</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Validación Bootstrap
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })();
+  </script>
+</body>
+</html>
